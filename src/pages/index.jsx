@@ -4,7 +4,55 @@ import { Container, Title, Section, SectionTitle, Paragraph, Footer } from './st
 import { Link } from 'react-router-dom'; // Importe o Link aqui também
 import Logo from '/src/assets/logo.png';
 
+const DiscordButton = styled.a`
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  background-color: #7289da; /* Cor padrão do Discord */
+
+  color: #fff;
+
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  transition: background-color 0.3s ease;
+
+
+  &:hover {
+
+    background-color: #677bc4;
+
+  }
+
+
+  img {
+
+    height: 24px;
+
+  }
+
+`;
+
 function PrivacyPolicyPage() {
+  const discordInviteLink = 'https://discord.gg/BrsFhGnZT4';
+
   return (
     <Container>
       <Title>Política de Privacidade - FlameMC Stats Bot</Title>
@@ -69,12 +117,15 @@ function PrivacyPolicyPage() {
           © 2025 FlameMC Stats Bot. Todos os direitos reservados.
         </div>
         <div>
-          Consulte a <Link to="/privacy">Política de Privacidade</Link> e os nossos
-          <Link to="/terms"> Termos de Serviço</Link>
+          <Link to="/privacy">Política de Privacidade</Link> <p> | </p>
+          <Link to="/terms">Termos de Serviço</Link>
         </div>
       </Footer>
 
-
+      <DiscordButton href={discordInviteLink} target="_blank" rel="noopener noreferrer">
+        <img src={DiscordLogo} alt="Discord" />
+        Entrar no Discord
+      </DiscordButton>
     </Container>
   );
 }

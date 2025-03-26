@@ -53,7 +53,7 @@ const DiscordButton = styled.a`
 
 
 function TermsOfServicePage() {
-  const discordInviteLink = 'SEU_LINK_DE_CONVITE_DO_DISCORD';
+  const discordInviteLink = 'https://discord.gg/BrsFhGnZT4';
 
   return (
     <Container>
@@ -154,8 +154,8 @@ function TermsOfServicePage() {
           © 2025 FlameMC Stats Bot. Todos os direitos reservados.
         </div>
         <div>
-          Consulte a <Link to="/privacy">Política de Privacidade</Link> e os nossos
-          <Link to="/terms"> Termos de Serviço</Link>
+          <Link to="/privacy">Política de Privacidade</Link> <p> | </p>
+          <Link to="/terms">Termos de Serviço</Link>
         </div>
       </Footer>
 
