@@ -154,7 +154,7 @@ function TermsOfServicePage() {
           © 2025 FlameMC Stats Bot. Todos os direitos reservados.
         </div>
         <div>
-          <Link to="/privacy">Política de Privacidade</Link> <p> | </p>
+          <Link to="/privacy">Política de Privacidade</Link> <p></p>
           <Link to="/terms">Termos de Serviço</Link>
         </div>
       </Footer>

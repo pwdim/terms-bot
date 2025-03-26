@@ -117,13 +117,13 @@ function PrivacyPolicyPage() {
           © 2025 FlameMC Stats Bot. Todos os direitos reservados.
         </div>
         <div>
-          <Link to="/privacy">Política de Privacidade</Link> <p> | </p>
+          <Link to="/privacy">Política de Privacidade</Link> <p></p>
           <Link to="/terms">Termos de Serviço</Link>
         </div>
       </Footer>
 
       <DiscordButton href={discordInviteLink} target="_blank" rel="noopener noreferrer">
-        <img src={DiscordLogo} alt="Discord" />
+        <img src={Logo} alt="Discord" />
         Entrar no Discord
       </DiscordButton>
     </Container>
